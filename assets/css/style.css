@@ -1,0 +1,103 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.game-board {
+ position: relative;
+ width: 600px;
+ height: 400px;
+ margin: 50px auto;
+ background-color: #333;
+ border-radius: 10px;
+}
+
+.ball {
+ border: none;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 20px;
+ height: 20px;
+ background-color: blue;
+ border-radius: 50%;
+}
+
+.paddle {
+ position: absolute;
+ width: 20px;
+ height: 100px;
+}
+
+.paddle-left {
+ left: 0;
+ background-color: green;
+}
+
+.paddle-right {
+ right: 0;
+ background-color: red;
+}
+
+.score-board {
+ display: flex;
+ margin: auto;
+ width: fit-content;
+ min-width: 80%;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: inset 0 0 5px grey;
+ height: 100px;
+ border-radius: 20px;
+ overflow: hidden;
+}
+
+.score-board .score-btn {
+ display: block;
+ padding: 10px;
+ font-size: 20px;
+ text-align: center;
+ width: 100px;
+}
+
+.score-board .score-btn:hover {
+ scale: 1.1;
+}
+
+.score-board .control-btns {
+ display: flex;
+ height: 100%;
+ justify-content: center;
+ align-items: center;
+ background-color: #33333396;
+ width: fit-content;
+ padding: 0 20px;
+ gap: 10px;
+}
+
+.score-board .control-btns .ctrl-btn {
+ border-radius: 10px;
+ padding: 5px;
+ margin: auto;
+}
+
+.score-board .control-btns .ctrl-btn:hover {
+ background-color: blueviolet;
+ scale: 1.2;
+}
+
+.score-board #reset-btn:hover {
+ background-color: rgb(133, 0, 0);
+}
+
+.score-board #left-score {
+ background-color: green;
+ border-radius: 0px 50% 50% 0px;
+}
+
+.score-board #right-score {
+ background-color: red;
+ border-radius: 50% 0 0 50%;
+}
